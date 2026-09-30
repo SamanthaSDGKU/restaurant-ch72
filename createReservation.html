@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
+    <title>Create reservation</title>
+</head>
+<body>
+    <header class="site-init">
+        <h1>My restaurant</h1>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="createReservation.html">Create a reservation</a>
+        </nav>
+    </header>
+    <main>
+        <div class="reservation-wrapper">
+            <div class="reservation-header">
+                <h1>Reserve your table</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam voluptas nobis officia nesciunt. </p>
+            </div>
+            <form class="reservation-form">
+                <!-- Date, Time, Guest Name, Party Size, Status. -->
+                <div class="input-group">
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+
+                <div class="input-group">
+                    <label>Time:</label>
+                    <input type="time">
+                </div>
+
+                <div class="input-group">
+                    <label>Guest name:</label>
+                    <input type="text">
+                </div>
+
+                <div class="input-group">
+                    <label>Party size:</label>
+                    <input type="number">
+                </div>
+
+                <div class="input-group">
+                    <label>Status</label>
+                    <select name="status" id="status">
+                        <option value="" disabled selected> --- Select one status --- </option>
+                        <option value="confirm">Confirm</option>
+                        <option value="pending">Pending</option>
+                        <option value="cancel">Cancel</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
