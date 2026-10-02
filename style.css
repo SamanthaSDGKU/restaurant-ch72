@@ -54,3 +54,11 @@ img{
     margin-top: 30px;
 }
 
+@media((min-width:601px) and (max-width:768px)){
+    .dish-month-container{
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+}
+}
+
